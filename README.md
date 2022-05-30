@@ -26,7 +26,7 @@ This project was developed using the following technologies:
 
 You can view the project through the links below:
 
--   [Live Preview](https://628527df5936cb0c3ee63e3d--tubular-rugelach-653198.netlify.app/)
+-   [Live Preview](https://flash-js.netlify.app/)
 
 <br>
 
