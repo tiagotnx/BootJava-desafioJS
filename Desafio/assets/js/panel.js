@@ -156,7 +156,7 @@ buttonProduct.forEach((item) => {
             case ">":
                 if (indexProduct >= produtos.length - 1) {
                     indexProduct = produtos.length - 1;
-                    alert("Final dos registros de Clientes");
+                    alert("Final dos registros de Produtos");
                 } else {
                     indexProduct++;
                 }
