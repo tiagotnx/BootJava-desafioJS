@@ -12,8 +12,8 @@ const authentication = () => {
                 return item.user === user.value && item.pws === pws.value;
             });
             findUser
-                ? (window.location.href = "http://localhost/Desafio/panel.html")
-                : alert("Usuário ou senha incorretos");
+                ? (window.location.href = "./panel.html")
+                : alert("Usuário ou senha incorreto");
         });
 };
 
