@@ -1,0 +1,14 @@
+1. Dê um exemplo de uma variavel obedecendo a boa pratica cameCase.
+
+
+var = nomeAluno;
+
+2. Por padrão, qual o tipo de dado atribuído a uma variável quando esta não recebe nenhum valor?
+undefined 
+var numero;
+console.log(numero);
+3. Quais são as duas categorias de tipos de dados do JS?
+
+Tipo primitivo e não primitivo;
+4. É verdade que o JS é uma linguagem server-side? Explique.
+Não é verdade, é uma linguagem client-side.

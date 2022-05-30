@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 5 - Concatenação de Strings - Saídas e entradas</title>
+</head>
+<script>
+  // alert("Olá Mundo");
+  // prompt("Digite alguma coisa");
+  // confirm("Clique em um botão");
+
+  // var nome = "Vinícius";
+  // // alert("Olá " + nome);
+  // var nome = prompt("digite seu nome");
+  // var cor = prompt("QUal sua cor favorita" + nome);
+  // document.write("nome.:::" + nome + "<br>");
+  // document.write("A cor favorita do" + nome + "é"
+  //   + cor + "<br>");
+
+  // var verdFalso = confirm("clique em um botão");
+  // if (confirm("clique em um botão")) {
+  //   console.log("Você clicou no OK");
+  //   document.write("Você clicou em ok");
+  //   alert("você clicou mesmo em ok");
+  // } else {
+  //   console.log("Você clicou no cancelar");
+
+  // }
+  var valor = prompt("Digite 1 ou 2 para continuar");
+
+
+  switch (valor) {
+    case '1':
+      var pergunta = confirm("Você pretende continuar a operacao?");
+      if (pergunta) {
+        alert("Parabéns você é corajoso");
+      } else {
+        alert("Poxa vida, está aflito?")
+      }
+      break;
+    case '2':
+      var pergunta = confirm("Você é casado?");
+      if (pergunta) {
+        var conj = prompt("Qual é o nome do seu conjuge?");
+        alert("Parabéns por ser casado com" + conj);
+      }
+      break;
+
+    default: console.log("Esta opção não existe");
+      break
+
+  }
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

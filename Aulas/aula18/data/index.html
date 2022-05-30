@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  let meses = [
+    'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+  ];
+
+  let diaSemana = [
+    'Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'
+  ];
+
+  let data = new Date();
+  console.log(meses[data.getDate()]);
+  console.log(data.getDate());
+  console.log(`Hoje é o dia ${data.getDay()}`);
+  console.log(`Hoje é o dia ${diaSemana[data.getDay()]} de ${meses[data.getMonth()]} de ${data.getFullYear()}`);
+
+  let dataFormatada = data.toLocaleString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' })
+  console.log(dataFormatada);
+
+  //getDate();
+  //getMonth();
+  //getFullYear
+  //getHours();
+  //getMinutes();
+
+</script>
+
+<body>
+
+</body>
+
+</html>

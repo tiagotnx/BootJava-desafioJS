@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 6 - Variáveis e Funções</title>
+</head>
+<script>
+  /*let ela identifica em qual escopo ela está já a var não*/
+  // var qualquer; // variável do tipo global
+  // //let
+  // let qq = "Variável let";
+  // //constante
+  // const valorConstante = 100;
+  // //aqui temos um escopo
+  // if (true) {
+  //   console.log(valorConstante);
+  //   //variável local
+  //   var varDentroIf = "Estou Dentro do if e sou uma var";
+  //   console.log(varDentroIf)
+  //   let letDentroDoIf = "Sou uma let e estou dentro do if";
+  // }
+  // console.log(valorConstante);
+
+  //função literal
+  function soma() {
+    console.log(1 + 3);
+  }
+
+  //soma();
+
+  function concatenaNome() {
+    var nome = "Vinícius";
+    var sobre = "Andrei"
+    alert(nome + sobre);
+  }
+  // concatenaNome();
+
+  function novaConcatenarNomes(nome, sobreNome) {
+    document.write(nome + " " + sobreNome);
+
+  }
+
+  novaConcatenarNomes("Vinícius", "Andrei");
+
+  // função anonima
+  let semNome = function () {
+    alert("Estou em uma função anonima");
+  }
+
+  //semNome();
+
+  let funComPars = function (idade, idadePar) {
+    if (idade > idadePar) {
+      alert("Você tem idade maior que" + idadePar);
+    } else {
+      alert("Você tem idade menor que" + idadePar);
+    }
+
+
+  }
+  funComPars(20, 18);
+  funComPars(17, 18);
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
