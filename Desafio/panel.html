@@ -65,6 +65,7 @@
                         class="form__input"
                         type="number"
                         id="inputCodeClient"
+                        readonly
                     />
 
                     <label class="form__label" for="inputNameClient"
@@ -74,6 +75,7 @@
                         class="form__input"
                         type="text"
                         id="inputNameClient"
+                        required
                     />
 
                     <label class="form__label" for="inputDateClient"
@@ -83,6 +85,7 @@
                         class="form__input"
                         type="text"
                         id="inputDateClient"
+                        readonly
                     />
                     <div class="form__container">
                         <div>
@@ -129,6 +132,7 @@
                         class="form__input"
                         type="number"
                         id="inputCodeProduct"
+                        readonly
                     />
 
                     <label class="form__label" for="inputDescriptionProduct"
@@ -138,6 +142,7 @@
                         class="form__input"
                         type="text"
                         id="inputDescriptionProduct"
+                        required
                     />
 
                     <label class="form__label" for="inputPriceProduct"
@@ -147,6 +152,7 @@
                         class="form__input"
                         type="text"
                         id="inputPriceProduct"
+                        required
                     />
 
                     <label class="form__label" for="inputAmountProduct"
@@ -156,6 +162,7 @@
                         class="form__input"
                         type="number"
                         id="inputAmountProduct"
+                        required
                     />
 
                     <div class="form__container">
@@ -195,54 +202,62 @@
                     <h1>Pedidos</h1>
                     <span>x</span>
                 </header>
-                <form action="" id="order">
-                    <label class="form__label" for="code"
+                <form action="" id="formOrder">
+                    <label class="form__label" for="inputCodeClientOrder"
                         >Código do Cliente</label
                     >
-                    <input class="form__input" type="number" id="code" />
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="inputCodeClientOrder"
+                    />
 
-                    <label class="form__label" for="description">Cliente</label>
+                    <label class="form__label" for="inputNameClientOrder"
+                        >Cliente</label
+                    >
                     <input
                         class="form__input"
                         type="text"
-                        id="description"
+                        id="inputNameClientOrder"
                         disabled
                     />
                     <hr />
                     <label class="title">Localizar Produtos</label>
                     <fieldset>
-                        <input type="number" id="item" required />
-                        <input type="text" id="description" disabled />
-                        <input type="text" id="price" disabled />
-                        <input type="text" id="quantity" required />
+                        <input
+                            type="number"
+                            id="inputCodeProductOrder"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="inputNameProductOrder"
+                            disabled
+                        />
+                        <input
+                            type="text"
+                            id="inputPriceProductOrder"
+                            disabled
+                        />
+                        <input type="text" id="inputquantityOrder" required />
                         <button>Lançar no Pedido</button>
                     </fieldset>
                     <hr />
                 </form>
                 <h3 class="title">Itens do Pedido</h3>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Descrição</th>
-                        <th>Preço</th>
-                        <th>Qtd</th>
-                        <th>Sub Total</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Caneta esferográfica</td>
-                        <td>0.8</td>
-                        <td>3</td>
-                        <td>2.40</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Cola Print</td>
-                        <td>3.65</td>
-                        <td>3</td>
-                        <td>10.95</td>
-                    </tr>
+                <table id="tableOrder">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Qtd</th>
+                            <th>Sub Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
                 </table>
+                <span id="totalOrder"></span>
             </section>
         </main>
     </body>

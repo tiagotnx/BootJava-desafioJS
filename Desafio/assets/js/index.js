@@ -12,7 +12,7 @@ const authentication = () => {
                 return item.user === user.value && item.pws === pws.value;
             });
             findUser
-                ? (window.location.href = "/panel.html")
+                ? (window.location.href = "http://localhost/Desafio/panel.html")
                 : alert("Usuário ou senha incorretos");
         });
 };
