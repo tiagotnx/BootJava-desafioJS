@@ -244,12 +244,20 @@ buttonOrder.addEventListener("click", (event) => {
         );
     });
     const verifyQuantity = produtos.find((item) => {
-        return item.qtdEstoqueProd < inputquantityOrder.value;
+        return (
+            item.codProduto == inputCodeProductOrder.value &&
+            item.qtdEstoqueProd < inputquantityOrder.value
+        );
     });
-    if (verifyOrder) {
+    if (
+        inputCodeProductOrder.value < 1 ||
+        inputCodeProductOrder.value > produtos.length
+    ) {
+        alert("Produto inexistente");
+    } else if (verifyOrder) {
         alert("Produto já adicionado");
-    } else if (verifyQuantity) {
-        alert("Quantidade indisponível");
+    } else if (verifyQuantity || inputquantityOrder.value < 1) {
+        alert("Quantidade indisponível ou incorreta");
     } else {
         orderList.push({
             codCliente: inputCodeClientOrder.value,
